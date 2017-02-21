@@ -1,0 +1,223 @@
+# final test
+#
+# lines beginning with a hashtag are comments
+# and are simply echoed to the output.
+#
+# first, let's acquire some movies
+#
+ACQ 2 Gone with the Wind
+ACQ 1 American Sniper
+ACQ 2 The Imitation Game
+ACQ 2 The Godfather
+ACQ 1 Frozen
+ACQ 4 Throw Mama from the Train
+ACQ 1 The Expendables
+ACQ 2 Talladega Nights
+#
+# Now add some customers
+#
+ACN 4 Joe Barnes
+ACN 5 Li Kim
+ACN 6 Helene Perrault
+ACN 2 Hadi Hemmadi
+ACN 2 Merrill Stubing
+ACN 1 Mike Domaratzki
+ACN 1 Gord Boyer
+# ACN error - customer already exists.
+ACN 2 Mike Domaratzki
+#
+# ADD requests. These should result in loans.
+#
+ADD American Sniper FOR Joe Barnes
+ADD Gone with the Wind FOR Joe Barnes
+ADD The Imitation Game FOR Helene Perrault
+ADD Frozen FOR Helene Perrault
+ADD The Imitation Game FOR Joe Barnes
+ADD Throw Mama from the Train FOR Hadi Hemmadi
+ADD The Godfather FOR Hadi Hemmadi
+ADD Talladega Nights FOR Joe Barnes
+ADD Throw Mama from the Train FOR Helene Perrault
+# error -- requeue. (has)
+ADD Frozen FOR Helene Perrault
+#
+# ADD requests. These should NOT result in loans (movie unavailable).
+#
+ADD American Sniper FOR Li Kim
+ADD Frozen FOR Merrill Stubing
+ADD The Imitation Game FOR Mike Domaratzki
+ADD The Imitation Game FOR Li Kim
+# error -- requeue (waiting)
+ADD Frozen FOR Merrill Stubing
+#
+# ADD requests. These should NOT result in loans (customer has max DVDs).
+#
+ADD The Expendables FOR Joe Barnes
+#
+# ADD requests. These should result in errors (no such movie or customer).
+#
+ADD Big FOR Joe Barnes
+ADD Gone with the Wind FOR Billy Preston
+#
+#
+#  REM requests. These should be successful.
+#
+REM American Sniper FOR Li Kim
+#
+# REM requests. These should result in errors.
+#
+REM American Sniper FOR Helene Perrault
+REM Big FOR Li Kim
+#
+# RET requests. These should result in errors (movie not loaned to customer).
+#
+RET American Sniper FROM Helene Perrault
+# RET works -- sends to other, random selection
+RET The Imitation Game FROM Joe Barnes
+# RET works -- sends to Merrill Stubing
+RET Frozen FROM Helene Perrault
+# LOS - error can't find movie
+LOS Big FROM Joe Barnes
+# LOST - error -- doesn't have movie
+LOS The Imitation Game FROM Hadi Hemmadi
+# LOST - ok
+LOS Frozen FROM Merrill Stubing
+ADD Frozen FOR Gord Boyer
+# RCN - not ok
+RCN Joe Barnes
+# RCN  - ok
+RCN Merrill Stubing
+# Do processing to remove everyone.
+RET The Imitation Game FROM Mike Domaratzki
+RCN Mike Domaratzki
+RET The Expendables FROM Joe Barnes
+RET Talladega Nights FROM Joe Barnes
+RET Gone with the Wind FROM Joe Barnes
+RET American Sniper FROM Joe Barnes
+RCN Joe Barnes
+RET The Imitation Game FROM Li Kim
+RCN Li Kim
+RET The Imitation Game FROM Helene Perrault
+RET Throw Mama from the Train FROM Helene Perrault
+RCN Helene Perrault
+RET The Godfather FROM Hadi Hemmadi
+RET Throw Mama from the Train FROM Hadi Hemmadi
+RCN Hadi Hemmadi
+RCN Gord Boyer
+# bunch of invalid stuff - no customer anymore
+RET The Imitation Game FROM Helene Perrault
+RCN Gord Boyer
+LOS Frozen FROM Merrill Stubing
+REM American Sniper FOR Li Kim
+# ACN customers again. they're fickle or something.
+ACN 2 Joe Barnes
+ACN 2 Li Kim
+ACN 2 Helene Perrault
+ACN 2 Hadi Hemmadi
+ACN 2 Merrill Stubing
+ACN 2 Mike Domaratzki
+ACN 2 Gord Boyer
+### add a bunch of movies
+ADD Gone with the Wind FOR Hadi Hemmadi
+ADD American Sniper FOR Hadi Hemmadi
+ADD The Imitation Game FOR Hadi Hemmadi
+ADD The Godfather FOR Hadi Hemmadi
+ADD Frozen FOR Hadi Hemmadi
+ADD Throw Mama from the Train FOR Hadi Hemmadi
+ADD The Expendables FOR Hadi Hemmadi
+ADD Talladega Nights FOR Hadi Hemmadi
+ADD Gone with the Wind FOR Joe Barnes
+ADD American Sniper FOR Joe Barnes
+ADD The Imitation Game FOR Joe Barnes
+ADD The Godfather FOR Joe Barnes
+ADD Frozen FOR Joe Barnes
+ADD Throw Mama from the Train FOR Joe Barnes
+ADD The Expendables FOR Joe Barnes
+ADD Talladega Nights FOR Joe Barnes
+ADD Gone with the Wind FOR Helene Perrault
+ADD American Sniper FOR Helene Perrault
+ADD The Imitation Game FOR Helene Perrault
+ADD The Godfather FOR Helene Perrault
+ADD Frozen FOR Helene Perrault
+ADD Throw Mama from the Train FOR Helene Perrault
+ADD The Expendables FOR Helene Perrault
+ADD Talladega Nights FOR Helene Perrault
+ADD Gone with the Wind FOR Li Kim
+ADD American Sniper FOR Li Kim
+ADD The Imitation Game FOR Li Kim
+ADD The Godfather FOR Li Kim
+ADD Frozen FOR Li Kim
+ADD Throw Mama from the Train FOR Li Kim
+ADD The Expendables FOR Li Kim
+ADD Talladega Nights FOR Li Kim
+ADD Gone with the Wind FOR Merrill Stubing
+ADD American Sniper FOR Merrill Stubing
+ADD The Imitation Game FOR Merrill Stubing
+ADD The Godfather FOR Merrill Stubing
+ADD Frozen FOR Merrill Stubing
+ADD Throw Mama from the Train FOR Merrill Stubing
+ADD The Expendables FOR Merrill Stubing
+ADD Talladega Nights FOR Merrill Stubing
+ADD Gone with the Wind FOR Mike Domaratzki
+ADD American Sniper FOR Mike Domaratzki
+ADD The Imitation Game FOR Mike Domaratzki
+ADD The Godfather FOR Mike Domaratzki
+ADD Frozen FOR Mike Domaratzki
+ADD Throw Mama from the Train FOR Mike Domaratzki
+ADD The Expendables FOR Mike Domaratzki
+ADD Talladega Nights FOR Mike Domaratzki
+ADD Gone with the Wind FOR Gord Boyer
+ADD American Sniper FOR Gord Boyer
+ADD The Imitation Game FOR Gord Boyer
+ADD The Godfather FOR Gord Boyer
+ADD Frozen FOR Gord Boyer
+ADD Throw Mama from the Train FOR Gord Boyer
+ADD The Expendables FOR Gord Boyer
+ADD Talladega Nights FOR Gord Boyer
+RET Gone with the Wind FROM Gord Boyer
+RET American Sniper FROM Gord Boyer
+RET The Imitation Game FROM Gord Boyer
+RET The Godfather FROM Gord Boyer
+RET Frozen FROM Gord Boyer
+RET Throw Mama from the Train FROM Gord Boyer
+RET The Expendables FROM Gord Boyer
+RET Talladega Nights FROM Gord Boyer
+RET Gone with the Wind FROM Mike Domaratzki
+RET American Sniper FROM Mike Domaratzki
+RET The Imitation Game FROM Mike Domaratzki
+RET The Godfather FROM Mike Domaratzki
+RET Frozen FROM Mike Domaratzki
+RET Throw Mama from the Train FROM Mike Domaratzki
+RET The Expendables FROM Mike Domaratzki
+RET Talladega Nights FROM Mike Domaratzki
+RET Gone with the Wind FROM Merrill Stubing
+RET American Sniper FROM Merrill Stubing
+RET The Imitation Game FROM Merrill Stubing
+RET The Godfather FROM Merrill Stubing
+RET Frozen FROM Merrill Stubing
+RET Throw Mama from the Train FROM Merrill Stubing
+RET The Expendables FROM Merrill Stubing
+RET Talladega Nights FROM Merrill Stubing
+RET Gone with the Wind FROM Li Kim
+RET American Sniper FROM Li Kim
+RET The Imitation Game FROM Li Kim
+RET The Godfather FROM Li Kim
+RET Frozen FROM Li Kim
+RET Throw Mama from the Train FROM Li Kim
+RET The Expendables FROM Li Kim
+RET Talladega Nights FROM Li Kim
+RET Gone with the Wind FROM Helene Perrault
+RET American Sniper FROM Helene Perrault
+RET The Imitation Game FROM Helene Perrault
+RET The Godfather FROM Helene Perrault
+RET Frozen FROM Helene Perrault
+RET Throw Mama from the Train FROM Helene Perrault
+RET The Expendables FROM Helene Perrault
+RET Talladega Nights FROM Helene Perrault
+RET Gone with the Wind FROM Joe Barnes
+RET American Sniper FROM Joe Barnes
+RET The Imitation Game FROM Joe Barnes
+RET The Godfather FROM Joe Barnes
+RET Frozen FROM Joe Barnes
+RET Throw Mama from the Train FROM Joe Barnes
+RET The Expendables FROM Joe Barnes
+RET Talladega Nights FROM Joe Barnes

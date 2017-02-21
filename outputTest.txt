@@ -1,0 +1,236 @@
+Adding 2 copies of Gone with the Wind  to inventory
+Adding 1 copies of American Sniper  to inventory
+Adding 2 copies of The Imitation Game  to inventory
+Adding 2 copies of The Godfather  to inventory
+Adding 1 copies of Frozen  to inventory
+Adding 4 copies of Throw Mama from the Train  to inventory
+Adding 1 copies of The Expendables  to inventory
+Adding 2 copies of Talladega Nights  to inventory
+Customer: Joe Barnes  added to our service.
+Customer: Li Kim  added to our service.
+Customer: Helene Perrault  added to our service.
+Customer: Hadi Hemmadi  added to our service.
+Customer: Merrill Stubing  added to our service.
+Customer: Mike Domaratzki  added to our service.
+Customer: Gord Boyer  added to our service.
+ACN Error: Mike Domaratzki  already exists.
+Adding : American Sniper  to Joe Barnes Lists.
+Adding : Gone with the Wind  to Joe Barnes Lists.
+Adding : The Imitation Game  to Helene Perrault Lists.
+Adding : Frozen  to Helene Perrault Lists.
+Adding : The Imitation Game  to Joe Barnes Lists.
+Adding : Throw Mama from the Train  to Hadi Hemmadi Lists.
+Adding : The Godfather  to Hadi Hemmadi Lists.
+Adding : Talladega Nights  to Joe Barnes Lists.
+Adding : Throw Mama from the Train  to Helene Perrault Lists.
+Error: Helene Perrault  already has Frozen  in their list
+Adding : American Sniper  to Li Kim Lists.
+Adding : Frozen  to Merrill Stubing Lists.
+Adding : The Imitation Game  to Mike Domaratzki Lists.
+Adding : The Imitation Game  to Li Kim Lists.
+Error: Merrill Stubing  already has Frozen  in their list
+Adding : The Expendables  to Joe Barnes Lists.
+Removed American Sniper  fromLi Kim
+Item not present. Could not remove!
+REM Error American Sniper  not present in Helene Perrault
+Error: [Big ] can't be removed, not present in customer database
+Error RET: Helene Perrault  tried to return American Sniper  , not loaned  to th                                                                                        em.
+Title: The Imitation Game  returned by Joe Barnes
+Title: Frozen  returned by Helene Perrault
+Error: Joe Barnes  tried to declare Big  lost, not loaned to them.
+Error: Hadi Hemmadi  tried to declare The Imitation Game  lost, not loaned to th                                                                                        em.
+One copy of: Frozen  lost by Merrill Stubing
+Error: can't close [ Joe Barnes  ]'s account, still has loans.
+Closing: Merrill Stubing  account.
+Error RET: Mike Domaratzki  tried to return The Imitation Game  , not loaned  to                                                                                         them.
+Closing: Mike Domaratzki  account.
+Error RET: Joe Barnes  tried to return The Expendables  , not loaned  to them.
+Title: Talladega Nights  returned by Joe Barnes
+Title: Gone with the Wind  returned by Joe Barnes
+Title: American Sniper  returned by Joe Barnes
+Closing: Joe Barnes  account.
+Title: The Imitation Game  returned by Li Kim
+Closing: Li Kim  account.
+Title: The Imitation Game  returned by Helene Perrault
+Title: Throw Mama from the Train  returned by Helene Perrault
+Closing: Helene Perrault  account.
+Title: The Godfather  returned by Hadi Hemmadi
+Title: Throw Mama from the Train  returned by Hadi Hemmadi
+Closing: Hadi Hemmadi  account.
+Closing: Gord Boyer  account.
+Error: trying to delete Gord Boyer  doen't exist
+Error: [Li Kim ] can't be removed, not present in database
+Customer: Joe Barnes  added to our service.
+Customer: Li Kim  added to our service.
+Customer: Helene Perrault  added to our service.
+Customer: Hadi Hemmadi  added to our service.
+Customer: Merrill Stubing  added to our service.
+Customer: Mike Domaratzki  added to our service.
+Customer: Gord Boyer  added to our service.
+Adding : Gone with the Wind  to Hadi Hemmadi Lists.
+Adding : American Sniper  to Hadi Hemmadi Lists.
+Adding : The Imitation Game  to Hadi Hemmadi Lists.
+Adding : The Godfather  to Hadi Hemmadi Lists.
+Adding : Throw Mama from the Train  to Hadi Hemmadi Lists.
+Adding : The Expendables  to Hadi Hemmadi Lists.
+Adding : Talladega Nights  to Hadi Hemmadi Lists.
+Adding : Gone with the Wind  to Joe Barnes Lists.
+Adding : American Sniper  to Joe Barnes Lists.
+Adding : The Imitation Game  to Joe Barnes Lists.
+Adding : The Godfather  to Joe Barnes Lists.
+Adding : Throw Mama from the Train  to Joe Barnes Lists.
+Adding : The Expendables  to Joe Barnes Lists.
+Adding : Talladega Nights  to Joe Barnes Lists.
+Adding : Gone with the Wind  to Helene Perrault Lists.
+Adding : American Sniper  to Helene Perrault Lists.
+Adding : The Imitation Game  to Helene Perrault Lists.
+Adding : The Godfather  to Helene Perrault Lists.
+Adding : Throw Mama from the Train  to Helene Perrault Lists.
+Adding : The Expendables  to Helene Perrault Lists.
+Adding : Talladega Nights  to Helene Perrault Lists.
+Adding : Gone with the Wind  to Li Kim Lists.
+Adding : American Sniper  to Li Kim Lists.
+Adding : The Imitation Game  to Li Kim Lists.
+Adding : The Godfather  to Li Kim Lists.
+Adding : Throw Mama from the Train  to Li Kim Lists.
+Adding : The Expendables  to Li Kim Lists.
+Adding : Talladega Nights  to Li Kim Lists.
+Adding : Gone with the Wind  to Merrill Stubing Lists.
+Adding : American Sniper  to Merrill Stubing Lists.
+Adding : The Imitation Game  to Merrill Stubing Lists.
+Adding : The Godfather  to Merrill Stubing Lists.
+Adding : Throw Mama from the Train  to Merrill Stubing Lists.
+Adding : The Expendables  to Merrill Stubing Lists.
+Adding : Talladega Nights  to Merrill Stubing Lists.
+Adding : Gone with the Wind  to Mike Domaratzki Lists.
+Adding : American Sniper  to Mike Domaratzki Lists.
+Adding : The Imitation Game  to Mike Domaratzki Lists.
+Adding : The Godfather  to Mike Domaratzki Lists.
+Adding : Throw Mama from the Train  to Mike Domaratzki Lists.
+Adding : The Expendables  to Mike Domaratzki Lists.
+Adding : Talladega Nights  to Mike Domaratzki Lists.
+Adding : Gone with the Wind  to Gord Boyer Lists.
+Adding : American Sniper  to Gord Boyer Lists.
+Adding : The Imitation Game  to Gord Boyer Lists.
+Adding : The Godfather  to Gord Boyer Lists.
+Adding : Throw Mama from the Train  to Gord Boyer Lists.
+Adding : The Expendables  to Gord Boyer Lists.
+Adding : Talladega Nights  to Gord Boyer Lists.
+Error RET: Gord Boyer  tried to return Gone with the Wind  , not loaned  to them                                                                                        .
+Error RET: Gord Boyer  tried to return American Sniper  , not loaned  to them.
+Error RET: Gord Boyer  tried to return The Imitation Game  , not loaned  to them                                                                                        .
+Error RET: Gord Boyer  tried to return The Godfather  , not loaned  to them.
+Error RET: Gord Boyer  tried to return Frozen  , not loaned  to them.
+Error RET: Gord Boyer  tried to return Throw Mama from the Train  , not loaned                                                                                          to them.
+Error RET: Gord Boyer  tried to return The Expendables  , not loaned  to them.
+Title: Talladega Nights  returned by Gord Boyer
+Error RET: Mike Domaratzki  tried to return Gone with the Wind  , not loaned  to                                                                                         them.
+Error RET: Mike Domaratzki  tried to return American Sniper  , not loaned  to th                                                                                        em.
+Error RET: Mike Domaratzki  tried to return The Imitation Game  , not loaned  to                                                                                         them.
+Error RET: Mike Domaratzki  tried to return The Godfather  , not loaned  to them                                                                                        .
+Error RET: Mike Domaratzki  tried to return Frozen  , not loaned  to them.
+Title: Throw Mama from the Train  returned by Mike Domaratzki
+Error RET: Mike Domaratzki  tried to return The Expendables  , not loaned  to th                                                                                        em.
+Title: Talladega Nights  returned by Mike Domaratzki
+Error RET: Merrill Stubing  tried to return Gone with the Wind  , not loaned  to                                                                                         them.
+Error RET: Merrill Stubing  tried to return American Sniper  , not loaned  to th                                                                                        em.
+Error RET: Merrill Stubing  tried to return The Imitation Game  , not loaned  to                                                                                         them.
+Error RET: Merrill Stubing  tried to return The Godfather  , not loaned  to them                                                                                        .
+Error RET: Merrill Stubing  tried to return Frozen  , not loaned  to them.
+Title: Throw Mama from the Train  returned by Merrill Stubing
+Title: The Expendables  returned by Merrill Stubing
+Error RET: Merrill Stubing  tried to return Talladega Nights  , not loaned  to t                                                                                        hem.
+Error RET: Li Kim  tried to return Gone with the Wind  , not loaned  to them.
+Error RET: Li Kim  tried to return American Sniper  , not loaned  to them.
+Error RET: Li Kim  tried to return The Imitation Game  , not loaned  to them.
+Title: The Godfather  returned by Li Kim
+Error RET: Li Kim  tried to return Frozen  , not loaned  to them.
+Title: Throw Mama from the Train  returned by Li Kim
+Error RET: Li Kim  tried to return The Expendables  , not loaned  to them.
+Title: Talladega Nights  returned by Li Kim
+Error RET: Helene Perrault  tried to return Gone with the Wind  , not loaned  to                                                                                         them.
+Error RET: Helene Perrault  tried to return American Sniper  , not loaned  to th                                                                                        em.
+Error RET: Helene Perrault  tried to return The Imitation Game  , not loaned  to                                                                                         them.
+Title: The Godfather  returned by Helene Perrault
+Error RET: Helene Perrault  tried to return Frozen  , not loaned  to them.
+Title: Throw Mama from the Train  returned by Helene Perrault
+Error RET: Helene Perrault  tried to return The Expendables  , not loaned  to th                                                                                        em.
+Error RET: Helene Perrault  tried to return Talladega Nights  , not loaned  to t                                                                                        hem.
+Title: Gone with the Wind  returned by Joe Barnes
+Error RET: Joe Barnes  tried to return American Sniper  , not loaned  to them.
+Title: The Imitation Game  returned by Joe Barnes
+Error RET: Joe Barnes  tried to return The Godfather  , not loaned  to them.
+Error RET: Joe Barnes  tried to return Frozen  , not loaned  to them.
+Title: Throw Mama from the Train  returned by Joe Barnes
+Error RET: Joe Barnes  tried to return The Expendables  , not loaned  to them.
+Title: Talladega Nights  returned by Joe Barnes
+**********PRINTING ALL CUSTOMERS**********
+CUSTOMER NAME: Gord Boyer
+-----------------------
+DVD's ON LOAN
+Title: Gone with the Wind
+Title: The Imitation Game
+Title: Throw Mama from the Train
+QUEUE
+Title: American Sniper
+Title: The Godfather
+Title: The Expendables
+
+CUSTOMER NAME: Hadi Hemmadi
+-----------------------
+DVD's ON LOAN
+Title: American Sniper
+Title: Gone with the Wind
+Title: Talladega Nights
+Title: The Godfather
+Title: Throw Mama from the Train
+QUEUE
+Title: The Imitation Game
+Title: The Expendables
+
+CUSTOMER NAME: Helene Perrault
+-----------------------
+DVD's ON LOAN
+Title: Talladega Nights
+QUEUE
+Title: Gone with the Wind
+Title: American Sniper
+Title: The Imitation Game
+Title: The Expendables
+
+CUSTOMER NAME: Joe Barnes
+-----------------------
+DVD's ON LOAN
+QUEUE
+Title: American Sniper
+Title: The Godfather
+Title: The Expendables
+
+CUSTOMER NAME: Li Kim
+-----------------------
+DVD's ON LOAN
+QUEUE
+Title: Gone with the Wind
+Title: American Sniper
+Title: The Imitation Game
+Title: The Expendables
+
+CUSTOMER NAME: Merrill Stubing
+-----------------------
+DVD's ON LOAN
+Title: The Godfather
+QUEUE
+Title: Gone with the Wind
+Title: American Sniper
+Title: The Imitation Game
+Title: Talladega Nights
+
+CUSTOMER NAME: Mike Domaratzki
+-----------------------
+DVD's ON LOAN
+QUEUE
+Title: Gone with the Wind
+Title: American Sniper
+Title: The Imitation Game
+Title: The Godfather
+Title: The Expendables
